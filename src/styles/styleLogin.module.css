@@ -1,0 +1,138 @@
+.form_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.form_container {
+
+  background-color: #759ac1;
+  border-radius: 8px;
+  width: 350px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  
+}
+
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.form_container h1 {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--black);
+}
+
+.input_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  direction: ltr;
+}
+
+.fixed_text {
+  font-size: 1.3rem;
+  margin-right: 1px;
+  margin-top: 5px;
+  color: var(--white);
+}
+
+
+.input_container input {
+  width: 150px;
+  padding:0 5px;
+  color: var(--white);
+  background-color: var(--cream);
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  border:none;
+}
+
+.form_container:hover .input_container input{
+  color: var(--white);
+
+  border:none;
+}
+
+.input_error {
+  
+  border: 1px solid var(--darked-orange);
+}
+
+.form_container button {
+  width: calc(55%);
+  padding:5px 10px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form_container button:hover {
+  background-color: var(--coper);
+}
+.toast {
+  position: absolute;
+  top: -30%; /* مرکز عمودی */
+  left: 0%; /* مرکز افقی */
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  direction: rtl;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
+  animation: fadeInOut 3s forwards;
+  text-align: center;
+}
+
+.toast.error {
+  background-color: var(--dark-red);
+  font-size: 0.6rem;
+  direction: rtl;
+  padding: 20px ;
+  color: var(--white);
+}
+
+.toast.success {
+  background-color: var(--dark-green);
+  font-size: 0.6rem;
+  direction: rtl;
+  padding: 20px ;
+  color: var(--white);
+}
+.enter_text{
+  color: var(--white);
+  font-size: 0.6rem;
+  direction: rtl;
+  padding: 20px ;
+}
+.wait_message{
+  color: var(--white);
+  font-size: 0.6rem;
+  direction: rtl;
+  padding: 20px ;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-50px); }
+  10% { opacity: 1; transform: translateY(0); } 
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-50px); }
+}
+

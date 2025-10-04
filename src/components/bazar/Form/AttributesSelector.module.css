@@ -1,0 +1,44 @@
+.attributes_container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 49%;
+  margin-right: 5px;
+  float: right;
+  direction: rtl;
+}
+
+.form_group {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: right;
+  color: #333;
+}
+
+.form_control {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 0px;
+  font-size: 0.8rem;
+  transition: border-color 0.3s;
+}
+
+.form_control:hover {
+  border-color: #007bff; /* رنگ مرزی در زمان هاور */
+}
+
+.form_control:focus {
+  outline: none;
+  border-color: #007bff; /* رنگ مرزی در زمان فوکوس */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* سایه برای فوکوس */
+}
+
+.placeholder {
+  color: #888; /* رنگ placeholder */
+}

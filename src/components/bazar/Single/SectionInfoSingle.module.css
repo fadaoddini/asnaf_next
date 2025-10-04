@@ -1,0 +1,67 @@
+.sell {
+  --color-dark: var(--sell-dark);
+  --color_icon: invert(13%) sepia(71%) saturate(2508%) hue-rotate(1deg) brightness(55%) contrast(90%);
+  --color-light: var(--sell-light);
+}
+
+.buy {
+  --color-dark: var(--buy-dark);
+  --color-light: var(--buy-light);
+  --color_icon:invert(78%) sepia(42%) saturate(268%) hue-rotate(326deg) brightness(50%) contrast(84%);
+}
+
+.info_right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  padding: 5px 15px 5px 5px;
+  border-left: 1px solid var(--color-dark);
+}
+.info_right:last-child {
+  border-left: none;
+}
+
+.info_right_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info_right_top_icon {
+  margin-right: 0px;
+}
+
+.info_right_top_title {
+  font-weight: bolder;
+  padding-right: 5px;
+  color: var(--color-dark);
+}
+
+.info_right_bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.info_right_bottom_price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.info_right_bottom_toman {
+  margin-right: 4px;
+  font-size: 1rem;
+}
+
+
+
+.icon_b {
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: var(--color_icon);
+}
+

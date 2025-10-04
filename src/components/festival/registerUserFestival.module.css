@@ -1,0 +1,263 @@
+/* styles/registerUserFestival.module.css */
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.dialog {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialogHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  background: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+}
+
+.dialogHeader h3 {
+  margin: 0;
+  color: #333;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton:hover {
+  color: #333;
+  background: #e9ecef;
+  border-radius: 50%;
+}
+
+.dialogContent {
+  padding: 20px;
+  direction: rtl;
+}
+
+.roomInfo {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border-right: 4px solid #007bff;
+}
+
+.roomInfo h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.roomDetails p {
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.registrationForm {
+  background: white;
+}
+
+.registrationForm h4 {
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.formSection {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.formSection h5 {
+  color: #495057;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.formRow {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.formGroup {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.formGroup small {
+  color: #6c757d;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+.dialogActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.submitButton {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #218838;
+  transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cancelButton {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cancelButton:hover:not(:disabled) {
+  background: #5a6268;
+  transform: translateY(-1px);
+}
+
+.cancelButton:disabled {
+  background: #a0a4a8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .dialog {
+    width: 95%;
+    margin: 10px;
+  }
+  
+  .formRow {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .dialogActions {
+    flex-direction: column;
+  }
+  
+  .dialogHeader {
+    padding: 15px;
+  }
+  
+  .dialogContent {
+    padding: 15px;
+  }
+  
+  .submitButton,
+  .cancelButton {
+    width: 100%;
+  }
+}
+
+/* استایل برای اسکرول بار در دیالوگ */
+.dialog::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dialog::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0 8px 8px 0;
+}
+
+.dialog::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.dialog::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

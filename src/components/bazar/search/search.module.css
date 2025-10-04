@@ -1,0 +1,56 @@
+/* استایل‌های کلی */
+.searchContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    direction: rtl;
+    margin-bottom: 30px;
+  }
+  
+  .searchWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding:9px 20px 9px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--brown);
+    font-size: 0.9rem;
+    color: var(--brown);
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .searchInput:focus {
+    border-color: var(--coper);
+  }
+  
+  .searchButton {
+    position: absolute;
+    left: 5px;
+
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .searchButton:hover {
+    background-color: var(--coper);
+  }
+  
+  .searchIcon {
+    font-size: 1rem;
+    cursor: pointer;
+    color: white; /* رنگ آیکن سفید */
+  }
+  

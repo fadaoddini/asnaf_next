@@ -1,0 +1,138 @@
+/* verify.module.css */
+
+.verify_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  direction: ltr;
+}
+
+.verify_container {
+  background-color: #759ac1;
+
+  border-radius: 8px;
+  width: 350px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.verify_container h1 {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--black);
+}
+
+.timer {
+  font-size: 0.7rem;
+  color: var(--white); /* استفاده از رنگ متغیر */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.code_container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  direction: ltr;
+}
+
+.code_input {
+  width: 40px;
+  height: 40px;
+  direction: ltr;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: #fff;
+  border-radius: 5px;
+  outline: none;
+}
+
+.verify_container:hover .code_input {
+  color: var(--darked-green);
+}
+
+.verify_container button {
+  width: calc(60%);
+  padding: 5px 10px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.verify_container button:hover {
+  background-color: var(--coper);
+}
+
+.toast {
+  position: absolute;
+  top: -30%; /* مرکز عمودی */
+  left: 0%; /* مرکز افقی */
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  direction: rtl;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
+  animation: fadeInOut 3s forwards;
+  text-align: center;
+}
+
+.toast.error {
+  background-color: var(--dark-red);
+  font-size: 0.6rem;
+  direction: rtl;
+  padding: 20px;
+  color: var(--white);
+}
+
+.toast.success {
+  background-color: var(--dark-green);
+  font-size: 0.6rem;
+  direction: rtl;
+  padding: 20px;
+  color: var(--white);
+}
+.enter_text {
+  color: var(--white);
+  font-size: 0.6rem;
+  direction: rtl;
+  padding: 20px;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}

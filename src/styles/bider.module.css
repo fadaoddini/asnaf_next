@@ -1,0 +1,144 @@
+.buyCard {
+  --dark-color: var(--buy-dark);
+
+  --light-color: var(--buy-light);
+}
+
+.sellCard {
+  --dark-color: var(--sell-dark);
+  --light-color: var(--sell-light);
+}
+
+.container {
+  padding: 0;
+  max-width: 1300px;
+  margin: 50px auto 0 auto;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* سه ستون مساوی */
+  gap: 30px; /* فاصله بین کارت‌ها */
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  direction: rtl;
+  margin: 30px auto;
+  background-color: var(--dark-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+.navbar:hover {
+  background-color: var(--brown);
+}
+
+.left_icon {
+  position: absolute;
+  top: -55px;
+  left: 10px;
+  animation: swing 5s ease-in-out infinite;
+  transform-origin: bottom center; /* نقطه چرخش پاندول */
+  border-radius: 50%;
+  padding: 5px;
+  z-index: -5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right_icon {
+  position: absolute;
+  top: -47px;
+  right: -10px;
+  z-index: -5;
+  border-radius: 50%;
+  padding: 5px;
+  animation: swing 5s ease-in-out infinite;
+  transform-origin: bottom center; /* نقطه چرخش پاندول */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* تعریف انیمیشن حرکت پاندول */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg); /* نقطه شروع */
+  }
+  25% {
+    transform: rotate(10deg); /* چرخش به یک سمت */
+  }
+  50% {
+    transform: rotate(0deg); /* بازگشت به حالت اولیه */
+  }
+  75% {
+    transform: rotate(-10deg); /* چرخش به سمت دیگر */
+  }
+  100% {
+    transform: rotate(0deg); /* بازگشت به حالت اولیه */
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.arrow img {
+  width: 50px;
+}
+
+.btn_click {
+  position: absolute;
+  top: -29px;
+  left: -70px;
+  background-color: var(--white);
+  border: 1px solid var(--dark-color);
+
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+.matn {
+  position: relative;
+  text-align: right;
+  margin: 0 auto;
+}
+.icon {
+  float: right;
+  width: 30px;
+  margin: 3px 0 3px 10px;
+}
+.titr {
+  font-size: 1.2rem;
+  color: var(--white);
+  text-align: center;
+  display: inline-block;
+  margin: 6px auto 0 auto;
+}
+
+/* برای صفحه‌های کوچکتر از 1024px */
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr); /* دو ستون */
+    gap: 50px; /* فاصله کمتر بین کارت‌ها */
+  }
+}
+
+/* برای صفحه‌های کوچکتر از 768px */
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr); /* یک ستون */
+    gap: 30px; /* فاصله کمتر بین کارت‌ها */
+  }
+}

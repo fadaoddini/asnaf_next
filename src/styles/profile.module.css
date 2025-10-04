@@ -1,0 +1,116 @@
+.container {
+  padding: 0;
+  max-width: 1300px;
+  margin: 50px auto 0 auto;
+  direction: rtl;
+}
+
+/* بخش‌بندی صفحه */
+.layout {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+/* ستون چپ */
+.left {
+  width: 70%;
+  padding: 0px;
+  height: 100%;
+  margin-right: 10px;
+}
+.row_right{
+  display: flex;
+  max-width: 410px;
+  flex-direction: row;
+}
+/* ستون راست */
+.right {
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0px;
+  height: 100%;
+
+}
+
+/* استایل تیتر */
+.title {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.bider_right {
+  padding: 25px;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  background-color: var(--white);
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info_product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light);
+  height: 90px;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: justify;
+  line-height: 1.9rem;
+  padding: 10px;
+}
+
+.titr {
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorit {
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: var(--color_icon);
+  cursor: pointer;
+}
+
+.favorit:hover {
+  filter: var(--color_icon_hover);
+}
+
+/* استایل مخصوص موبایل */
+@media (max-width: 974px) {
+  .layout {
+    display: flex;
+    flex-direction: column; /* ستون عمودی */
+  }
+
+  .left,
+  .right {
+    width: 100%; /* تمام عرض صفحه */
+    margin-right: 0;
+    margin-bottom: 20px; /* فاصله بین ردیف‌ها */
+  }
+}
+.body_tab{
+  border-radius: 25px;
+  background-color: var(--crown);
+  
+}

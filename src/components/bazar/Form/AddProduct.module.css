@@ -1,0 +1,108 @@
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background-color: #fff; /* پس‌زمینه مودال */
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* رنگ متن */
+  }
+  
+  .header {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ff9800; /* رنگ دکمه */
+  }
+  
+  .inputContainer {
+    margin-bottom: 15px;
+  }
+  
+  .inputLabel {
+    font-size: 0.9rem;
+    color: #ff9800; /* رنگ متن دکمه */
+    margin: 0 10px 10px 0;
+    min-width: 210px;
+    display: inline-block;
+  }
+  
+  .inputField {
+    padding: 10px;
+    direction: ltr;
+    border: 1px solid #ccc; /* استفاده از خاکستری */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* پس‌زمینه ورودی */
+    color: #333; /* رنگ متن */
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    direction: ltr;
+  }
+  
+  .submitButton {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--light-orange);
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color:var(--dark-red); /* تغییر رنگ هنگام هاور */
+    color: var(--light-orange);
+    font-weight:lighter;
+  }
+  
+  .closeButton {
+    background-color: #bbb; /* رنگ پس‌زمینه برای دکمه بستن */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .closeButton:hover {
+    background-color: #999; /* تغییر رنگ هنگام هاور */
+  }
+  
+  
+.box_title {
+  font-size:0.9rem;
+  color: var(--black);
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--darked-orange);
+}
+.box_title span {
+  font-size: 1.1rem;
+  color: var(--darked-orange);
+  margin: 0 5px;
+  font-weight: bold;
+}

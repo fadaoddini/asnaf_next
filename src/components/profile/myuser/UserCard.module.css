@@ -1,0 +1,131 @@
+.card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: none;
+  background-color: transparent;
+  width: 100%;
+}
+.profile_section{
+  direction: rtl;
+  float: right;
+}
+.name_user{
+  text-align: right;
+  padding-right: 30px;
+  font-size: 1.2rem;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main_img {
+  position: relative;
+  margin-right: 10px;
+}
+
+.imageContainer {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cameraIcon {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.statItem {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.badi {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.divider {
+  width: 1px;
+  height: 30px;
+  background-color: #ccc;
+}
+
+.buttons {
+  margin-left: auto;
+}
+
+.button_follow,
+.button_unfollow {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button_follow {
+  background-color: var(--dark-green);
+  color: #fff;
+}
+
+.button_unfollow {
+  background-color: var(--cream);
+  color: #fff;
+}
+
+
+@media (max-width: 1260px) {
+  .card {
+    flex-direction: column; /* تغییر جهت چیدمان به ستون */
+    align-items: flex-start; /* تنظیم تراز آیتم‌ها */
+  }
+
+  .content {
+    flex-direction: column; /* محتوا نیز به ستون تغییر کند */
+    align-items: flex-start;
+  }
+
+  .stats {
+    justify-content: flex-start; /* ترازبندی آماری */
+    margin-left: 0; /* حذف فاصله اضافی */
+    margin-top: 10px; /* فاصله از بالا برای جدا شدن */
+  }
+
+  .buttons {
+    margin-left: 0; /* حذف فاصله چپ */
+    margin-top: 10px; /* فاصله از بالا برای جدا شدن */
+    align-self: flex-start; /* تراز دکمه‌ها به چپ */
+  }
+
+  .main_img {
+    margin-bottom: 10px; /* فاصله پایین بین عکس و متن */
+  }
+}

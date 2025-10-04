@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'IranSans';
+  src: url('../public/fonts/iransansbold.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+:root {
+  --background: #f1f3fc;
+  --foreground: #f1f3fc;
+
+
+  --coper: #3a82ff;
+  --brown: #1c1d71;
+  --cream: #3b55d6;
+  --dark-red: #8b3a3a;
+  --white: #ffffff;
+  --black: #000000;
+  --dark-background: #0a0a0a;
+  --light-red: #fde5db;
+  --dark-green: #556b2f;
+  --light-green: #e3f1c8;
+
+  --btn:#408d63;
+  --btn-hover:#118878;
+
+  --buy-dark: #556b2f; 
+  --buy-dark1: #6e8548; 
+  --buy-light: #e3f1c8; 
+  --sell-dark: #8b3a3a; 
+  --sell-dark1: #9c4949; 
+  --sell-light: #fde5db; 
+  --bg_chart:#F6E8DD;
+
+
+  --card-shadow:var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --background: #f1f3fc;
+  --foreground: #f1f3fc;
+  }
+}
+
+body {
+  color: var(--brown);
+  background: var(--background);
+  margin-top: 75px;
+  font-family: 'IranSans';
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,11 @@
+.profileHeader {
+    color: #e74c3c;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  .profileContent {
+    background-color: #f1c40f;
+    padding: 20px;
+    border-radius: 10px;
+  }

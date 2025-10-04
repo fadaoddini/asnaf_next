@@ -1,0 +1,297 @@
+/* استایل‌های کلی صفحه */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  direction: rtl;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto 100px auto;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.left {
+  width: 100%;  
+  padding: 10px;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: auto;
+}
+
+.festivalSelector {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.festivalSelector select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.titleRed {
+  position: relative;
+  font-size: 14px;
+  font-weight: bolder;
+  padding-top: 20px;
+  color: var(--dark-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.bannerContainer {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.ImageBanner {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.ImageBannerMobile {
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+  max-height: 150px;
+}
+
+.userView {
+  width: 100%;
+}
+
+.userView p{
+  color: #333;
+  font-size: 12px;
+}
+
+/* تغییرات اصلی در این بخش */
+.headerCards {
+  display: flex;
+  flex-direction: column; /* تغییر به ستونی */
+  gap: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.card {
+  width: 100%; /* کارت عرض کامل بگیرد */
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  background: white;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* استایل برای کارت انتخاب نمایشگاه */
+.festivalSelector {
+  text-align: center;
+}
+
+.festivalSelector h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 12px;
+}
+
+.festivalSelector select {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 12px;
+  background: white;
+  transition: border-color 0.3s ease;
+}
+
+.festivalSelector select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* استایل برای کارت اطلاعات نمایشگاه */
+.festivalInfoCard {
+  text-align: center;
+}
+
+.festivalInfoCard .titleRed {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: var(--dark-red);
+}
+
+.festivalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.festivalInfo p {
+  margin: 0;
+  padding: 5px 0;
+  color: #555;
+  font-size: 12px;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.festivalInfo p:last-child {
+  border-bottom: none;
+}
+
+/* استایل‌های مربوط به لاگین */
+.loginRequired {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.loginMessage {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.loginMessage h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.loginMessage p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.loginActions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.loginButton {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: background 0.3s ease;
+}
+
+.loginButton:hover {
+  background: #0056b3;
+}
+
+.userInstructions {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.userInstructions p {
+  margin: 0;
+  color: #495057;
+  font-size: 12px;
+}
+
+.adminView, .userView {
+  width: 100%;
+}
+
+/* برای صفحات بسیار کوچک */
+@media (max-width: 768px) {
+  .headerCards {
+    gap: 15px;
+  }
+  
+  .card {
+    padding: 12px;
+  }
+  
+  .festivalSelector h2 {
+    font-size: 12px;
+  }
+  
+  .festivalInfoCard .titleRed {
+    font-size: 16px;
+  }
+  
+  .festivalInfo p {
+    font-size: 12px;
+  }
+  
+   .ImageBanner {
+    display: none;
+  }
+  
+  .ImageBannerMobile {
+    display: block;
+  }
+  
+  .loginMessage {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .ImageBanner {
+    display: none;
+  }
+  
+  .ImageBannerMobile {
+   
+     display: block;
+  }
+  
+  .loginActions {
+    flex-direction: column;
+  }
+  
+  .loginButton {
+    text-align: center;
+  }
+}

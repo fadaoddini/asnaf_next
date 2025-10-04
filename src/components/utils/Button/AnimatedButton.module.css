@@ -1,0 +1,59 @@
+/* components/AnimatedButton.module.css */
+
+.button {
+    position: relative;
+    padding:10px 20px;
+    margin: 10px 0;
+    color: var(--button-hover-bg); /* رنگ متن برای حالت هاور */
+    background-color: var(--button-bg); /* رنگ پس‌زمینه اصلی */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden; /* مخفی کردن بخشی از دایره که از کادر دکمه بیرون می‌زند */
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .button:hover {
+    color: var(--button-hover-color); /* تغییر رنگ متن در هاور */
+    background-color: var(--button-hover-bg); /* تغییر رنگ پس‌زمینه در هاور */
+    border: 1px solid var(--darked);
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.2); /* سایه داخلی در حالت هاور */
+  }
+  
+.title{
+    z-index: 100;
+}
+  
+  .circle {
+    position: absolute;
+    display: inline-block;
+    right: -22px; /* نیمی از عرض دایره بیرون از کادر دکمه */
+    top:4px;     /* موقعیت عمودی مرکز دایره */
+    transform: translateY(3px); /* مرکز دایره نسبت به ارتفاع دکمه */
+    transform: translateX(0px); /* مرکز دایره نسبت به ارتفاع دکمه */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* دایره */
+    background-color: var(--darked); /* رنگ پس‌زمینه */
+    z-index: 0; /* در پشت دکمه قرار گیرد */
+    transition: transform 0.5s, background-color 0.5s; /* انیمیشن برای تغییرات دایره */
+  }
+  
+  .button:hover .circle {
+    width: 105px;
+    height: 105px;
+    right: -20px;
+    opacity: 0.1;
+    transform: translateX(-100px); /* مرکز دایره نسبت به ارتفاع دکمه */
+    transform: translateY(-30px); /* مرکز دایره نسبت به ارتفاع دکمه */
+  }
+  
+  .button:hover .title {
+   color:  var(--darked);
+    transform: translateX(-100px); /* مرکز دایره نسبت به ارتفاع دکمه */
+  }
+  

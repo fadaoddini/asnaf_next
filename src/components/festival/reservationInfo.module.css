@@ -1,0 +1,283 @@
+/* styles/reservationInfo.module.css */
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.dialog {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialogHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  background: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+}
+
+.dialogHeader h3 {
+  margin: 0;
+  color: #333;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton:hover {
+  color: #333;
+  background: #e9ecef;
+  border-radius: 50%;
+}
+
+.dialogContent {
+  padding: 20px;
+  direction: rtl;
+}
+
+.section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  border-right: 3px solid #007bff;
+  padding-right: 10px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.infoItem label {
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.infoItem span {
+  color: #333;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.receiptSection {
+  text-align: center;
+}
+
+.receiptImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.receiptImg {
+  max-width: 100%;
+  max-height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.downloadLink {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.downloadLink:hover {
+  text-decoration: underline;
+}
+
+.noReceipt {
+  color: #6c757d;
+  font-style: italic;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.description {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  line-height: 1.6;
+}
+
+.statusSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.currentStatus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.status-0 { background: #fff3cd; color: #856404; } /* در انتظار تایید */
+.status-1 { background: #d1ecf1; color: #0c5460; } /* تایید شده */
+.status-2 { background: #f8d7da; color: #721c24; } /* رد شده */
+.status-3 { background: #e2e3e5; color: #383d41; } /* لغو شده */
+
+.statusActions h5 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.approveButton {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.approveButton:hover {
+  background: #218838;
+}
+
+.rejectButton {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.rejectButton:hover {
+  background: #c82333;
+}
+
+.cancelButton {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancelButton:hover {
+  background: #5a6268;
+}
+
+.dialogActions {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  text-align: left;
+}
+
+.closeBtn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background: #5a6268;
+}
+
+.loading, .error, .noReservation {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .dialog {
+    width: 95%;
+    margin: 10px;
+  }
+  
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+  }
+  
+  .dialogHeader {
+    padding: 15px;
+  }
+  
+  .dialogContent {
+    padding: 15px;
+  }
+}

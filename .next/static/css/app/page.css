@@ -1,0 +1,1309 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/styles/home.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+/* استایل‌های کلی صفحه */
+.home_container__TLSt1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  direction: rtl;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto 100px auto;
+}
+
+.home_main__C5E0Z {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.home_left__6NXtE {
+  width: 100%;  
+  padding: 10px;
+}
+
+.home_gridContainer__FKG1m {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: auto;
+}
+
+.home_festivalSelector__0o8IF {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.home_festivalSelector__0o8IF select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.home_titleRed__7mQCo {
+  position: relative;
+  font-size: 14px;
+  font-weight: bolder;
+  padding-top: 20px;
+  color: var(--dark-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.home_bannerContainer__h9vgn {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.home_ImageBanner__lHPre {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.home_ImageBannerMobile__OG1pb {
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+  max-height: 150px;
+}
+
+.home_userView__Sv1eJ {
+  width: 100%;
+}
+
+.home_userView__Sv1eJ p{
+  color: #333;
+  font-size: 12px;
+}
+
+/* تغییرات اصلی در این بخش */
+.home_headerCards__LBR9F {
+  display: flex;
+  flex-direction: column; /* تغییر به ستونی */
+  gap: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.home_card__MTm12 {
+  width: 100%; /* کارت عرض کامل بگیرد */
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  background: white;
+}
+
+.home_card__MTm12:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* استایل برای کارت انتخاب نمایشگاه */
+.home_festivalSelector__0o8IF {
+  text-align: center;
+}
+
+.home_festivalSelector__0o8IF h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 12px;
+}
+
+.home_festivalSelector__0o8IF select {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 12px;
+  background: white;
+  transition: border-color 0.3s ease;
+}
+
+.home_festivalSelector__0o8IF select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* استایل برای کارت اطلاعات نمایشگاه */
+.home_festivalInfoCard__eiC7s {
+  text-align: center;
+}
+
+.home_festivalInfoCard__eiC7s .home_titleRed__7mQCo {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: var(--dark-red);
+}
+
+.home_festivalInfo__Pqza7 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home_festivalInfo__Pqza7 p {
+  margin: 0;
+  padding: 5px 0;
+  color: #555;
+  font-size: 12px;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.home_festivalInfo__Pqza7 p:last-child {
+  border-bottom: none;
+}
+
+/* استایل‌های مربوط به لاگین */
+.home_loginRequired__gQ8ef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.home_loginMessage__d28Kr {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.home_loginMessage__d28Kr h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.home_loginMessage__d28Kr p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.home_loginActions__Ibx0K {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.home_loginButton__YS1MQ {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: background 0.3s ease;
+}
+
+.home_loginButton__YS1MQ:hover {
+  background: #0056b3;
+}
+
+.home_userInstructions__JT4Of {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.home_userInstructions__JT4Of p {
+  margin: 0;
+  color: #495057;
+  font-size: 12px;
+}
+
+.home_adminView__hoZXm, .home_userView__Sv1eJ {
+  width: 100%;
+}
+
+/* برای صفحات بسیار کوچک */
+@media (max-width: 768px) {
+  .home_headerCards__LBR9F {
+    gap: 15px;
+  }
+  
+  .home_card__MTm12 {
+    padding: 12px;
+  }
+  
+  .home_festivalSelector__0o8IF h2 {
+    font-size: 12px;
+  }
+  
+  .home_festivalInfoCard__eiC7s .home_titleRed__7mQCo {
+    font-size: 16px;
+  }
+  
+  .home_festivalInfo__Pqza7 p {
+    font-size: 12px;
+  }
+  
+   .home_ImageBanner__lHPre {
+    display: none;
+  }
+  
+  .home_ImageBannerMobile__OG1pb {
+    display: block;
+  }
+  
+  .home_loginMessage__d28Kr {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home_container__TLSt1 {
+    padding: 10px;
+  }
+  
+  .home_ImageBanner__lHPre {
+    display: none;
+  }
+  
+  .home_ImageBannerMobile__OG1pb {
+   
+     display: block;
+  }
+  
+  .home_loginActions__Ibx0K {
+    flex-direction: column;
+  }
+  
+  .home_loginButton__YS1MQ {
+    text-align: center;
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/festival/festivalMatrix.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/* styles/festivalMatrix.module.css */
+.festivalMatrix_matrixContainer__W0Ins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0px;
+  direction: rtl;
+  position: relative;
+  width: 100%;
+}
+
+.festivalMatrix_matrixGrid__V_g4i {
+  display: grid;
+  gap: 2px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  width: 80%;
+  overflow: auto;
+  /* ابعاد جدید برای سلول‌ها */
+  grid-auto-columns: 20px;
+  grid-auto-rows: 20px;
+}
+
+.festivalMatrix_matrixCell__nnUOL {
+  min-width: 25px;
+  min-height: 25px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #999;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* کلاس‌های رنگ برای وضعیت‌های مختلف */
+.festivalMatrix_cellEmpty__yrtai {
+  background-color: #95a5a6; /* خاکستری */
+}
+
+.festivalMatrix_cellFree__bDvGw {
+  background-color: #27ae60; /* سبز */
+}
+
+.festivalMatrix_cellReserved__X0ZYX {
+  background-color: #e67e22; /* نارنجی */
+}
+
+.festivalMatrix_cellConfirmed__ymg0j {
+  background-color: #3498db; /* آبی */
+}
+
+.festivalMatrix_cellUnavailable__poTiQ {
+  background-color: #e74c3c; /* قرمز */
+}
+
+.festivalMatrix_cellCorridor__ZEI_R {
+  background-color: #2c3e50; /* مشکی/آبی تیره */
+}
+
+.festivalMatrix_matrixCell__nnUOL:hover {
+  transform: scale(0.9);
+  filter: brightness(0.8);
+  z-index: 10;
+  box-shadow: 0 0 1px rgba(0,0,0,0.9);
+}
+
+.festivalMatrix_cellIndicator__FwCvS {
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.festivalMatrix_legend__MdImR {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.festivalMatrix_legendItem__SlrZN {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.festivalMatrix_legendItem__SlrZN span{
+  font-size: 10px;
+  color: #000;
+}
+
+.festivalMatrix_legendColor__N_mZU {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+/* بقیه استایل‌ها بدون تغییر می‌مانند... */
+
+/* دیالوگ استایل‌ها */
+.festivalMatrix_dialogOverlay__FLyDD {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.festivalMatrix_dialog__HpA_j {
+  background: white;
+  border-radius: 8px;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.festivalMatrix_dialogHeader__wrqD5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.festivalMatrix_dialogHeader__wrqD5 h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.festivalMatrix_closeButton__R1COG {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.festivalMatrix_closeButton__R1COG:hover {
+  color: #333;
+}
+
+.festivalMatrix_dialogForm__ph4Yd {
+  padding: 20px;
+}
+
+.festivalMatrix_formGroup__opeCs {
+  margin-bottom: 15px;
+}
+
+.festivalMatrix_formGroup__opeCs label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.festivalMatrix_formGroup__opeCs input,
+.festivalMatrix_formGroup__opeCs select,
+.festivalMatrix_formGroup__opeCs textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.festivalMatrix_formGroup__opeCs textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.festivalMatrix_formGroupRow__defxB {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.festivalMatrix_checkboxLabel__0GHiU {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.festivalMatrix_checkboxLabel__0GHiU input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.festivalMatrix_positionDisplay__pXs8D {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.festivalMatrix_dialogActions___ftqY {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.festivalMatrix_saveButton__ozcLC {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 80px;
+}
+
+.festivalMatrix_saveButton__ozcLC:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.festivalMatrix_deleteButton__aKtG0 {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 80px;
+}
+
+.festivalMatrix_deleteButton__aKtG0:hover:not(:disabled) {
+  background: #da190b;
+}
+
+.festivalMatrix_cancelButton__kFPci {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 80px;
+}
+
+.festivalMatrix_cancelButton__kFPci:hover:not(:disabled) {
+  background: #5a6268;
+}
+
+.festivalMatrix_saveButton__ozcLC:disabled,
+.festivalMatrix_deleteButton__aKtG0:disabled,
+.festivalMatrix_cancelButton__kFPci:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* بخش اطلاعات رزرو */
+.festivalMatrix_reservationSection__3K3x_ {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  box-sizing: border-box;
+}
+
+.festivalMatrix_reservationSection__3K3x_ h4 {
+  margin: 0 0 15px 0;
+  color: #495057;
+  font-size: 16px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+.festivalMatrix_reservationInfo__pwFfs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.festivalMatrix_reservationRow__gpWiH {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid #dee2e6;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.festivalMatrix_reservationRow__gpWiH:last-child {
+  border-bottom: none;
+}
+
+.festivalMatrix_reservationRow__gpWiH strong {
+  color: #495057;
+  font-weight: 600;
+  min-width: 140px;
+  font-size: 14px;
+}
+
+.festivalMatrix_reservationRow__gpWiH span {
+  color: #6c757d;
+  text-align: left;
+  flex: 1;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.festivalMatrix_statusBadge__0egvJ {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.festivalMatrix_status-0__jdyt0 { background-color: #fff3cd; color: #856404; } /* در انتظار تایید */
+.festivalMatrix_status-1__UM074 { background-color: #d1ecf1; color: #0c5460; } /* تایید شده */
+.festivalMatrix_status-2__Asss7 { background-color: #f8d7da; color: #721c24; } /* رد شده */
+.festivalMatrix_status-3__pifPB { background-color: #e2e3e5; color: #383d41; } /* لغو شده */
+
+.festivalMatrix_loading__MoCMj {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.festivalMatrix_noReservation__1FDSu {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px dashed #dee2e6;
+  font-size: 14px;
+}
+
+.festivalMatrix_receiptImageContainer__4Q2qZ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.festivalMatrix_receiptImage___Zjul {
+  max-width: 100%;
+  max-height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  object-fit: contain;
+}
+
+.festivalMatrix_receiptImage___Zjul:hover {
+  transform: scale(1.05);
+}
+
+.festivalMatrix_viewFullButton__BhJN3 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  width: auto;
+}
+
+.festivalMatrix_viewFullButton__BhJN3:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 720px) {
+  .festivalMatrix_matrixCell__nnUOL {
+    min-width: 22px;
+    min-height: 22px;
+    font-size: 7px;
+  }
+  
+  .festivalMatrix_matrixGrid__V_g4i {
+    max-width: 100vw;
+    grid-auto-columns: 15px;
+    grid-auto-rows: 15px;
+  }
+  
+  .festivalMatrix_reservationSection__3K3x_ {
+    padding: 3px;
+  }
+  
+  .festivalMatrix_reservationSection__3K3x_ h4 {
+    font-size: 12px;
+  }
+}
+
+/* اضافه کردن اسکرول بار سفارشی برای ماتریس */
+.festivalMatrix_matrixGrid__V_g4i::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.festivalMatrix_matrixGrid__V_g4i::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.festivalMatrix_matrixGrid__V_g4i::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.festivalMatrix_matrixGrid__V_g4i::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/festival/registerUserFestival.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+/* styles/registerUserFestival.module.css */
+.registerUserFestival_dialogOverlay__RPYOY {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.registerUserFestival_dialog__hdubj {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.registerUserFestival_dialogHeader__4X_1E {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  background: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+}
+
+.registerUserFestival_dialogHeader__4X_1E h3 {
+  margin: 0;
+  color: #333;
+}
+
+.registerUserFestival_closeButton__dn1bC {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registerUserFestival_closeButton__dn1bC:hover {
+  color: #333;
+  background: #e9ecef;
+  border-radius: 50%;
+}
+
+.registerUserFestival_dialogContent__LPBrg {
+  padding: 20px;
+  direction: rtl;
+}
+
+.registerUserFestival_roomInfo__cwl27 {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border-right: 4px solid #007bff;
+}
+
+.registerUserFestival_roomInfo__cwl27 h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.registerUserFestival_roomDetails__y0TTv p {
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.registerUserFestival_registrationForm__R2Q_b {
+  background: white;
+}
+
+.registerUserFestival_registrationForm__R2Q_b h4 {
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.registerUserFestival_formSection__5q1tE {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.registerUserFestival_formSection__5q1tE h5 {
+  color: #495057;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.registerUserFestival_formRow__NtC_o {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.registerUserFestival_formGroup__HiOsj {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.registerUserFestival_formGroup__HiOsj label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.registerUserFestival_formGroup__HiOsj input,
+.registerUserFestival_formGroup__HiOsj textarea,
+.registerUserFestival_formGroup__HiOsj select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.registerUserFestival_formGroup__HiOsj input:focus,
+.registerUserFestival_formGroup__HiOsj textarea:focus,
+.registerUserFestival_formGroup__HiOsj select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.registerUserFestival_formGroup__HiOsj textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.registerUserFestival_formGroup__HiOsj small {
+  color: #6c757d;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+.registerUserFestival_dialogActions__96Cew {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.registerUserFestival_submitButton__gYMKt {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.registerUserFestival_submitButton__gYMKt:hover:not(:disabled) {
+  background: #218838;
+  transform: translateY(-1px);
+}
+
+.registerUserFestival_submitButton__gYMKt:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.registerUserFestival_cancelButton__5hZ0g {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.registerUserFestival_cancelButton__5hZ0g:hover:not(:disabled) {
+  background: #5a6268;
+  transform: translateY(-1px);
+}
+
+.registerUserFestival_cancelButton__5hZ0g:disabled {
+  background: #a0a4a8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .registerUserFestival_dialog__hdubj {
+    width: 95%;
+    margin: 10px;
+  }
+  
+  .registerUserFestival_formRow__NtC_o {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .registerUserFestival_dialogActions__96Cew {
+    flex-direction: column;
+  }
+  
+  .registerUserFestival_dialogHeader__4X_1E {
+    padding: 15px;
+  }
+  
+  .registerUserFestival_dialogContent__LPBrg {
+    padding: 15px;
+  }
+  
+  .registerUserFestival_submitButton__gYMKt,
+  .registerUserFestival_cancelButton__5hZ0g {
+    width: 100%;
+  }
+}
+
+/* استایل برای اسکرول بار در دیالوگ */
+.registerUserFestival_dialog__hdubj::-webkit-scrollbar {
+  width: 8px;
+}
+
+.registerUserFestival_dialog__hdubj::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0 8px 8px 0;
+}
+
+.registerUserFestival_dialog__hdubj::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.registerUserFestival_dialog__hdubj::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/festival/reservationInfo.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+/* styles/reservationInfo.module.css */
+.reservationInfo_dialogOverlay__eIo_O {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.reservationInfo_dialog__fycbs {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reservationInfo_dialogHeader__SEVbS {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  background: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+}
+
+.reservationInfo_dialogHeader__SEVbS h3 {
+  margin: 0;
+  color: #333;
+}
+
+.reservationInfo_closeButton__1yBtA {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservationInfo_closeButton__1yBtA:hover {
+  color: #333;
+  background: #e9ecef;
+  border-radius: 50%;
+}
+
+.reservationInfo_dialogContent__uh7JT {
+  padding: 20px;
+  direction: rtl;
+}
+
+.reservationInfo_section__CwDbf {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.reservationInfo_section__CwDbf:last-child {
+  border-bottom: none;
+}
+
+.reservationInfo_section__CwDbf h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  border-right: 3px solid #007bff;
+  padding-right: 10px;
+}
+
+.reservationInfo_infoGrid__wXtA2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.reservationInfo_infoItem__d1iJJ {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.reservationInfo_infoItem__d1iJJ label {
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.reservationInfo_infoItem__d1iJJ span {
+  color: #333;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.reservationInfo_receiptSection__V8mGn {
+  text-align: center;
+}
+
+.reservationInfo_receiptImage__edDAQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.reservationInfo_receiptImg__7qrDa {
+  max-width: 100%;
+  max-height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.reservationInfo_downloadLink__tqRQB {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reservationInfo_downloadLink__tqRQB:hover {
+  text-decoration: underline;
+}
+
+.reservationInfo_noReceipt__oTP2S {
+  color: #6c757d;
+  font-style: italic;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.reservationInfo_description__oG96H {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  line-height: 1.6;
+}
+
+.reservationInfo_statusSection__0b48f {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservationInfo_currentStatus__h0_IN {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reservationInfo_status__RAXsB {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.reservationInfo_status-0__tSU_r { background: #fff3cd; color: #856404; } /* در انتظار تایید */
+.reservationInfo_status-1__sPTc4 { background: #d1ecf1; color: #0c5460; } /* تایید شده */
+.reservationInfo_status-2__dBvZu { background: #f8d7da; color: #721c24; } /* رد شده */
+.reservationInfo_status-3__R_I60 { background: #e2e3e5; color: #383d41; } /* لغو شده */
+
+.reservationInfo_statusActions__SxdNp h5 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.reservationInfo_actionButtons__rvLg8 {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.reservationInfo_approveButton__yY2I4 {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.reservationInfo_approveButton__yY2I4:hover {
+  background: #218838;
+}
+
+.reservationInfo_rejectButton__3MILz {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.reservationInfo_rejectButton__3MILz:hover {
+  background: #c82333;
+}
+
+.reservationInfo_cancelButton__NNP_4 {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.reservationInfo_cancelButton__NNP_4:hover {
+  background: #5a6268;
+}
+
+.reservationInfo_dialogActions__tK4P9 {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  text-align: left;
+}
+
+.reservationInfo_closeBtn__CGpPN {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reservationInfo_closeBtn__CGpPN:hover {
+  background: #5a6268;
+}
+
+.reservationInfo_loading__uNXQd, .reservationInfo_error__5UrtY, .reservationInfo_noReservation__1w9fp {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+}
+
+.reservationInfo_error__5UrtY {
+  color: #dc3545;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .reservationInfo_dialog__fycbs {
+    width: 95%;
+    margin: 10px;
+  }
+  
+  .reservationInfo_infoGrid__wXtA2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .reservationInfo_actionButtons__rvLg8 {
+    flex-direction: column;
+  }
+  
+  .reservationInfo_dialogHeader__SEVbS {
+    padding: 15px;
+  }
+  
+  .reservationInfo_dialogContent__uh7JT {
+    padding: 15px;
+  }
+}

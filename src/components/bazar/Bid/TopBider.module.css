@@ -1,0 +1,189 @@
+/* TopBider.module.css */
+
+.buy {
+  --color-dark: var(--sell-dark);
+
+  --color-dark1: var(--sell-dark1);
+}
+
+.sell {
+  --color-dark: var(--buy-dark);
+  --color-dark1: var(--buy-dark1);
+}
+
+.container {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--color-dark);
+  border-radius: 25px;
+}
+
+.topBidders {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bidderCard {
+  width: 30%;
+  background-color: var(--color-dark1);
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+  position: relative;
+}
+
+.imageContainer img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.imageContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.rankBadge {
+  position: absolute;
+  bottom: 5px;
+  left: -10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  border: 5px solid var(--color-dark1);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.rank1 .rankBadge {
+  background-color: #F9C75D;
+}
+
+.rank2 .rankBadge {
+  background-color: silver;
+}
+
+.rank3 .rankBadge {
+  background-color: #FDBB86; /* رنگ برنزی */
+}
+
+.info {
+  margin-top: 10px;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.details {
+  direction: ltr;
+  font-size: 14px;
+  margin-top: 5px;
+  color: var(--white);
+}
+
+.totalPrice {
+  display: inline-block;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  width: 100%;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.rank1 .totalPrice {
+  background-color: #F9C75D;
+}
+
+.rank2 .totalPrice {
+  background-color: silver;
+}
+
+.rank3 .totalPrice {
+  background-color: #FDBB86; /* رنگ برنزی */
+}
+
+.otherBidders {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.otherBidderItem {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-dark1);
+  padding: 3px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.otherBidderItem .rank {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--white);
+}
+
+.otherBidderItem .name {
+  flex: 3;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.otherBidderItem .details {
+  flex: 2;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.otherBidderItem .totalPrice {
+  font-size: 1.3rem;
+  flex: 3;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 5px 8px;
+  text-align: center;
+  margin-left: 0px;
+}
+.toman {
+  font-size: 0.8rem;
+  margin: 0 4px;
+}
+.otherBidderItem .status {
+  font-size: 12px;
+  color: #666;
+  margin-left: 10px;
+}
+
+.zarb {
+  width: 10px;
+  display: inline-block;
+  margin: 5px;
+}

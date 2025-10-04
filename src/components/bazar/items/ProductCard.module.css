@@ -1,0 +1,180 @@
+/* استایل کارت کلی */
+.card {
+  display: flex;
+  position: relative;
+  direction: rtl;
+  flex-direction: row;
+  background-color: var(--white); /* پس‌زمینه کارت */
+  padding: 10px 80px 10px 10px;
+  width: 87%;
+  height: 160px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 30px 5px 5px;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.buyCard {
+  --bg-color: var(--buy-dark);
+  --text-color: var(--buy-dark);
+  --border-color: var(--buy-dark);
+  --bg-color-hover: var(--buy-light);
+  --text-attr: var(--buy-dark);
+}
+
+.sellCard {
+  --bg-color: var(--sell-dark);
+  --text-color: var(--sell-dark);
+  --border-color: var(--sell-dark);
+  --bg-color-hover: var(--sell-light);
+  --text-attr: var(--sell-dark);
+}
+
+.card:hover {
+  border: 1px solid var(--border-color);
+}
+
+/* استایل تصویر و کانتینر آن */
+.imageContainer {
+  position: absolute;
+  top: 25px;
+  right: -40px;
+  width: 110px;
+  height: 110px;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.image {
+  position: relative;
+  border-radius: 10px;
+  width: 110px;
+  height: 110px;
+  border: none;
+  object-fit: cover;
+}
+
+.label_img {
+  position: absolute;
+  bottom: -40px;
+  right: -30px;
+  animation: swing 5s ease-in-out infinite;
+  transform-origin: top left; /* نقطه چرخش پاندول */
+}
+
+/* تعریف انیمیشن حرکت پاندول */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg); /* نقطه شروع */
+  }
+  25% {
+    transform: rotate(10deg); /* چرخش به یک سمت */
+  }
+  50% {
+    transform: rotate(0deg); /* بازگشت به حالت اولیه */
+  }
+  75% {
+    transform: rotate(-10deg); /* چرخش به سمت دیگر */
+  }
+  100% {
+    transform: rotate(0deg); /* بازگشت به حالت اولیه */
+  }
+}
+/* استایل بخش اطلاعات */
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: var(--text-attr); /* رنگ عنوان */
+}
+
+.offer {
+  font-size: 0.7rem;
+  width: fit-content;
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--white); /* رنگ متن پیشنهاد */
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+/* جزئیات محصول */
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  color: var(--detail-text); /* رنگ متن جزئیات */
+}
+.attr{
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: var(--bg-color);
+}
+.bold {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* استایل برای تایمر */
+.timerContainer {
+  position: absolute;
+  background-color: var(--bg-color-hover);
+  border-radius: 15px;
+  left: 15px;
+  bottom: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  padding: 2px 10px 2px 0;
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+.timerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.timerIcon {
+  background-color: var(--bg-color);
+  width: 24px;
+  height: 24px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.buyIcon {
+  filter: brightness(0) saturate(131%) invert(33%) sepia(17%) saturate(3505%) hue-rotate(40deg) brightness(106%) contrast(107%);
+}
+
+.sellIcon {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(59%) saturate(574%) hue-rotate(312deg) brightness(93%) contrast(95%);
+ 
+}

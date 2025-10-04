@@ -1,0 +1,61 @@
+.chartContainer {
+    direction: rtl;
+    width: 100%;
+    background-color: var(--bg_chart);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    background-color: var(--white);
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    padding: 10px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .active {
+    background-color:var(--white);
+  }
+  
+  .buttonContainer{
+   
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    padding: 10px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttonContainer button{
+    background-color: var(--white);
+    border: none;
+    border-radius: 25px;
+    color: #000000;
+    padding: 10px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  
+  .buttonContainer button:hover{
+    background-color: var(--brown);
+    color: var(--white);
+  }

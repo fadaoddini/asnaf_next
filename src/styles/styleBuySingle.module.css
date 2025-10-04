@@ -1,0 +1,130 @@
+/* برای در نظر گرفتن فضای کافی برای نوار جستجو */
+.sell {
+  --color-dark: var(--sell-dark);
+  --color_icon:invert(10%) sepia(42%) saturate(168%) hue-rotate(296deg) brightness(95%) contrast(94%);
+  --color_icon_hover:invert(3%) sepia(42%) saturate(168%) hue-rotate(296deg) brightness(95%) contrast(94%);
+  --color-light: var(--sell-light);
+}
+
+.buy {
+  --color-dark: var(--buy-dark);
+  --color-light: var(--buy-light);
+
+  --color_icon:invert(98%) sepia(42%) saturate(168%) hue-rotate(296deg) brightness(95%) contrast(94%);
+  --color_icon_hover:invert(78%) sepia(42%) saturate(168%) hue-rotate(296deg) brightness(95%) contrast(94%);
+
+
+}
+
+
+.container {
+  padding: 0 ;
+  max-width: 1300px;
+  margin: 50px auto 0 auto;
+  direction: rtl;
+}
+
+
+/* بخش‌بندی صفحه */
+.layout {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+
+}
+
+/* ستون چپ */
+.left {
+  width: 25%;
+ 
+  padding: 0px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+/* بخش اصلی */
+.main {
+  flex: 1; /* بخش اصلی اندازه‌اش خودکار باقیمانده فضا را پر می‌کند */
+  border-radius: 5px ;
+  border-radius: 5px ;
+  padding:0px;
+  height: 100%;
+  margin: 0 10px 0 0; /* فاصله بین ستون‌ها */
+}
+
+/* ستون راست */
+.right {
+
+  width: 25%;
+  text-align: center;
+
+  border-radius: 5px ;
+  padding: 0px;
+  height: 100%;
+
+}
+
+/* استایل تیتر */
+.title {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin: 20px 0;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* سه ستون مساوی */
+  gap: 10px; /* فاصله بین کارت‌ها */
+  
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* سه ستون مساوی */
+  gap: 10px; /* فاصله بین کارت‌ها */
+}
+
+.bider_right{
+  padding: 25px;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  background-color: var(--white);
+  border-radius: 25px ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info_product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light);
+  height: 90px;
+  border-radius: 25px;
+  padding: 10px ;
+  margin-bottom: 10px;
+}
+.description{
+  text-align: justify;
+  line-height: 1.9rem;
+  padding: 10px;
+}
+.titr{
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+}
+.favorit {
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: var(--color_icon);
+  cursor: pointer;
+}
+
+.favorit:hover {
+  filter: var(--color_icon_hover);
+}

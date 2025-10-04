@@ -1,0 +1,91 @@
+.card {
+  width: 100%;
+  height: 290px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0;
+  text-decoration: none; /* برای حذف خط زیر لینک */
+}
+
+.coverImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(89, 172, 116, 0.35);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(89, 196, 89, 0.35);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(108, 204, 79, 0.35);
+  border-radius: 10px;
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 40px;
+    border-radius: 10px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+
+.wrapper::before {
+  top: 0px;
+  height: 100%;
+background-color: #56c080;
+}
+
+.wrapper::after {
+  bottom: 0px;
+  opacity: 1;
+background-color: #56c080;
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+
+.card:hover .wrapper::after {
+  height: 120px;
+}
+
+.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+  width: 110%;
+  top: 60px;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}

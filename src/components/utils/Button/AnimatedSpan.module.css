@@ -1,0 +1,33 @@
+/* components/AnimatedButton.module.css */
+
+.button {
+    position: relative;
+    padding:10px 10px;
+    margin-bottom:10px;
+    color: var(--button-hover-bg); /* رنگ متن برای حالت هاور */
+    background-color: var(--button-bg); /* رنگ پس‌زمینه اصلی */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden; /* مخفی کردن بخشی از دایره که از کادر دکمه بیرون می‌زند */
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+ 
+  
+.title{
+    z-index: 100;
+    font-size: 0.8rem;
+}
+  
+ 
+  
+  .button:hover .title {
+   color:  var(--white);
+    transform: translateX(-100px); /* مرکز دایره نسبت به ارتفاع دکمه */
+  }
+  

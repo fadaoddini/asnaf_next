@@ -1,0 +1,75 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+}
+
+.dialog {
+  background-color: var(--light-red);
+  padding: 10px;
+  border: none; /* تم نارنجی */
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 150px;
+  text-align: center;
+}
+
+.message {
+  font-size: 0.8rem;
+  margin: 25px 0;
+  color: #333;
+}
+
+.buttonContainer {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 10px ;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* انیمیشن نرم */
+}
+
+.confirmButton {
+  background-color: var(--dark-red); /* تم نارنجی */
+  color: #fff;
+
+  border: none;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40%;
+}
+
+.confirmButton:hover {
+  background-color: var(--brown); /* تغییر رنگ در هاور */
+}
+
+.cancelButton {
+  background-color: var(--light-red);
+  color: #333;
+  cursor: pointer;
+  border: 1px solid var(--dark-red);
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  width: 40%;
+}
+
+.cancelButton:hover {
+  background-color: var(--white); /* تغییر رنگ در هاور */
+}

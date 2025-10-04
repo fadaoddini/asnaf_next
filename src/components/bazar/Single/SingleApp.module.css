@@ -1,0 +1,111 @@
+.imageSlider {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; 
+    margin-left: 20px;
+    overflow: hidden; 
+  }
+  
+  .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    border-radius: 25px; 
+  }
+  
+
+  .imageSlider::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 70px; 
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    border-radius: 0 0 25px 25px;
+    pointer-events: none; 
+  }
+  
+ 
+  .prevButton,
+  .nextButton {
+    position: absolute; 
+    top: 50%; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    transform: translateY(-50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    border: none; 
+    padding: 5px; 
+    cursor: pointer; 
+    z-index: 10; 
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: var(--bg-color); 
+  }
+  
+  /* موقعیت دکمه قبلی */
+  .prevButton {
+    left: 10px; 
+  }
+  
+
+  .nextButton {
+    right: 10px;
+  }
+  
+
+  .dots {
+    position: absolute;
+    text-align: right; 
+    bottom: 10px;
+    right: 20px;
+    z-index: 50; 
+  }
+  
+
+  .dot {
+    height: 7px; 
+    width: 7px; 
+    margin: 0 3px; 
+    background-color: var(--coper);
+    border-radius: 50%; 
+    display: inline-block; 
+    cursor: pointer; 
+    opacity: 0.9; 
+   
+  }
+  
+  .active {
+    background-color: var(--white);
+    width: 20px;
+    border-radius: 5px;
+  }
+
+  .time_content{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    color: var(--white);
+    width: 130px ;
+    font-size: 0.7rem !important;
+    height: 20px;
+    z-index: 3;
+
+  }
+  .icon_time{
+    padding: 0px 0 0 0;
+    height: 20px;
+    margin: 7px 0 0 0;
+    display: block;
+  }
+  

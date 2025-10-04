@@ -1,0 +1,36 @@
+.form_group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 49%;
+    float: right;
+    direction: rtl;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: right;
+    color: #333; /* رنگ متن */
+  }
+  
+  .form_control {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 0px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .form_control:hover {
+    border-color: var(--light-orange) !important; /* رنگ مرزی در زمان هاور */
+  }
+  
+  .form_control:focus {
+    outline: none;
+    border-color: var(--dark-orange) !important; /* رنگ مرزی در زمان فوکوس */
+    box-shadow: 0 0 5px rgba(206, 206, 206, 0.5); /* سایه برای فوکوس */
+  }
+  

@@ -1,0 +1,143 @@
+/* استایل برای فرم کلی */
+.form_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 5px;
+  direction: rtl;
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+.form_label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #333;
+}
+
+.form_control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--brown);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form_control:focus {
+  border-color: var(--brown-dark);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea.form_control {
+  resize: vertical;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--brown);
+  font-size: 0.8rem;
+  color: #333;
+  background-color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select:focus {
+  border-color: var(--brown-dark);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* استایل برای گزینه‌های دکمه‌ها */
+.form_control:focus,
+.select:focus {
+  outline: none;
+}
+
+/* استایل برای متن داخل فیلدها */
+textarea.form_control {
+  font-family: "Roboto", sans-serif;
+}
+
+/* استایل برای دکمه‌ها و ورودی‌های انتخابی */
+button.form_button {
+  padding: 10px 20px;
+  background-color: var(--brown);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button.form_button:hover {
+  background-color: var(--brown-dark);
+}
+
+button.form_button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* استایل برای بخش‌ها */
+.full_width {
+  grid-column: span 2;
+}
+
+/* استایل برای محدوده‌ای که بارگذاری تصویر در آن قرار دارد */
+.form_group .add_image_icon {
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+  background-color: var(--background);
+  border: 1px solid var(--brown);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--brown);
+}
+
+.form_group .image_preview_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form_group .image_list_item {
+  position: relative;
+}
+
+.form_group .image_preview {
+  width: 190px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.form_group .remove_button {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--sell-dark);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.form_group .remove_button:hover {
+  background-color: var(--sell-dark1);
+}

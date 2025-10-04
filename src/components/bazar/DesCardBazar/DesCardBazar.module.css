@@ -1,0 +1,74 @@
+.card {
+    width: 230px; /* عرض کارت */
+    height: 370px; /* ارتفاع کارت */
+    background-color: #ffffff; /* رنگ پس‌زمینه */
+    border-radius: 5px; /* انحنا گوشه‌ها */
+    overflow: hidden; /* پنهان کردن هر چیزی که از کارت بیرون می‌زند */
+    display: flex;
+    flex-direction: column; /* ترتیب عمودی محتوا */
+    padding: 10px; /* فاصله داخلی */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه کارت */
+    margin: 0 auto; /* مرکز کردن کارت */
+  }
+  
+  .image {
+    width: 100%; /* عرض تصویر */
+    height: 150px; /* ارتفاع تصویر */
+    object-fit: cover; /* پوشش مناسب تصویر */
+    border-radius: 5px; /* انحنا گوشه‌های تصویر */
+    border-bottom: 1px solid #ddd; /* خط پایین تصویر */
+  }
+  
+  .content {
+    padding: 10px; /* فاصله داخلی */
+    flex: 1; /* استفاده از فضای باقی‌مانده */
+    display: flex;
+    flex-direction: column; /* ترتیب عمودی محتوا */
+    justify-content: space-between; /* فاصله‌دهی بین بخش‌ها */
+  }
+  
+  .title {
+    font-size: 0.9rem; /* اندازه فونت عنوان */
+    margin: 0; /* حذف فاصله خارجی */
+    font-weight: bold; /* ضخیم کردن فونت */
+  }
+  
+  .description {
+    font-size: 0.8rem; /* اندازه فونت توضیحات */
+    color: #666; /* رنگ متن */
+    margin: 10px 0; /* فاصله بالا و پایین */
+    overflow: hidden; /* پنهان کردن متن اضافی */
+    text-overflow: ellipsis; /* نمایش سه نقطه برای متن اضافی */
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* محدودیت خطوط توضیحات */
+    -webkit-box-orient: vertical; /* ترتیب عمودی */
+  }
+  
+  
+  .description_chart {
+    font-size: 0.8rem; /* اندازه فونت توضیحات */
+    color: #666; /* رنگ متن */
+    margin: 10px 0; /* فاصله بالا و پایین */
+   min-height: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* محدودیت خطوط توضیحات */
+    -webkit-box-orient: vertical; /* ترتیب عمودی */
+  }
+  
+  .button {
+    background-color:var(--btn-bg); /* رنگ پس‌زمینه دکمه */
+    color: white; /* رنگ متن دکمه */
+    border: none; /* حذف خط مرزی */
+    border-radius: 5px; /* انحنا گوشه‌های دکمه */
+    padding:5px 10px; /* فاصله داخلی */
+    cursor: pointer; /* تغییر نشانگر ماوس */
+    text-align: center; /* تراز کردن متن دکمه */
+    text-decoration: none; /* حذف خط زیر متن دکمه */
+    display: inline-block; /* نمایش بلوکی به صورت خطی */
+    margin-top: auto; /* قرار دادن دکمه در پایین کارت */
+  }
+  
+  .button:hover {
+    background-color: var(--btn-bg-hover); /* تغییر رنگ پس‌زمینه هنگام hover */
+  }
+  

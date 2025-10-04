@@ -1,0 +1,45 @@
+.card {
+  width: 230px; /* عرض کارت */
+  height: auto; /* تنظیم ارتفاع خودکار */
+  background-color: #ffffff; /* رنگ پس‌زمینه */
+  border-radius: 25px; /* انحنا گوشه‌ها */
+  overflow: hidden; /* پنهان کردن هر چیزی که از کارت بیرون می‌زند */
+  display: flex;
+  flex-direction: column; /* ترتیب عمودی محتوا */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه کارت */
+  margin: 0 auto 10px; /* مرکز کردن کارت */
+}
+
+.image {
+  width: 100%; /* عرض تصویر */
+  height: 150px; /* ارتفاع تصویر */
+  object-fit: cover; /* پوشش مناسب تصویر */
+  border-radius: 25px; /* انحنا گوشه‌های تصویر */
+  border-bottom: 1px solid #ddd; /* خط پایین تصویر */
+}
+
+.content {
+  padding: 10px; /* فاصله داخلی */
+  flex: 1; /* استفاده از فضای باقی‌مانده */
+  display: flex;
+  flex-direction: column; /* ترتیب عمودی محتوا */
+  justify-content: space-between; /* فاصله‌دهی بین بخش‌ها */
+  direction: rtl; /* راست به چپ */
+}
+
+.title {
+  font-size: 0.9rem; /* اندازه فونت عنوان */
+  margin: 0; /* حذف فاصله خارجی */
+  font-weight: bold; /* ضخیم کردن فونت */
+  text-align: center; /* تراز کردن متن به سمت راست */
+}
+
+.description_chart {
+  font-size: 0.8rem; /* اندازه فونت توضیحات */
+  color: #666; /* رنگ متن */
+  margin: 10px 0; /* فاصله بالا و پایین */
+  text-align: justify; /* تراز کردن متن به صورت justify */
+  direction: rtl; /* راست به چپ */
+  text-align-last: center; /* تراز کردن آخرین خط به سمت راست */
+}

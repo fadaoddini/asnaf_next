@@ -1,0 +1,39 @@
+/* تنظیمات اصلی صفحه */
+.container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom:30px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    float: left;
+  }
+  
+  /* استایل محتوا */
+  .pageContent {
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+    max-width: 1024px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); /* ستون‌ها با عرض حداقلی 300px */
+  }
+  
+  .footer_title{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #5c5c5c;
+    margin-top: 20px;
+  }
+  
+  
+  

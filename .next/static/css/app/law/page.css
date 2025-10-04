@@ -1,0 +1,128 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/law/law.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+/* استایل‌های عمومی صفحه قوانین */
+.law_lawContainer__AIgDK {
+  direction: rtl;
+  padding: 100px 20px 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+.law_lawTitle___gUB7 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.law_lawList__unD8e {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.law_lawItem__r7NFo {
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.law_lawItem__r7NFo:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.law_lawHeader__ip0BN {
+  background-color: #f8f8f8;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.law_lawHeader__ip0BN:hover {
+  background-color: #f0f0f0;
+}
+
+.law_lawNumber__rnV2X {
+  background-color: #FFA412;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.law_lawQuestion__92s5_ {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  flex-grow: 1;
+}
+
+.law_lawIcon__6ouPe {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.law_lawIcon__6ouPe.law_open__cqjkO {
+  transform: rotate(180deg);
+}
+
+.law_lawContent__ddV5I {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background-color: white;
+}
+
+.law_lawContent__ddV5I.law_open__cqjkO {
+  padding: 20px;
+  max-height: 500px;
+}
+
+.law_lawText__O9jNq {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* استایل‌های موبایل */
+@media (max-width: 768px) {
+  .law_lawContainer__AIgDK {
+    padding: 80px 15px 70px;
+  }
+  
+  .law_lawTitle___gUB7 {
+    font-size: 1.5rem;
+  }
+  
+  .law_lawHeader__ip0BN {
+    padding: 12px 15px;
+  }
+  
+  .law_lawQuestion__92s5_ {
+    font-size: 0.9rem;
+  }
+  
+  .law_lawContent__ddV5I.law_open__cqjkO {
+    padding: 15px;
+  }
+}

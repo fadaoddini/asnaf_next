@@ -1,0 +1,193 @@
+.categoryContainer {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+
+.titleRed {
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    padding-top: 20px;
+    color: var(--dark-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleGreen {
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: var(--dark-green);
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideImage {
+    width: 100px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.categoryList {
+    display: flex;
+    justify-content: center; /* مرکزچین کردن آیتم‌ها */
+    flex-wrap: wrap; /* اجازه می‌دهد که آیتم‌ها به خط بعدی بروند */
+    gap: 10px; /* مقدار دلخواه برای فاصله بین آیتم‌ها، اگر نیاز باشد */
+}
+
+.categoryItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.circleContainerRed {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    padding: 3px;
+    margin: 2px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+
+.circleContainerRed::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #000;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    animation: rotateCircle 5s linear infinite;
+}
+
+
+.circleContainerRed::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 94%;
+    height: 94%;
+    animation: rotateCircle 5s linear infinite;
+}
+
+
+.circleContainerRed::before {
+    border-color: transparent var(--dark-red) transparent transparent;
+    clip-path: inset(1% 0 0 0);
+   
+}
+
+.circleContainerRed::after {
+    clip-path: inset(0 25% 0 0);
+    border-color: var(--dark-red);
+    animation-direction: reverse;
+}
+
+
+
+.circleContainerGreen {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    padding: 3px;
+    margin: 2px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+
+.circleContainerGreen::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #000;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    animation: rotateCircle 5s linear infinite;
+}
+
+
+.circleContainerGreen::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 94%;
+    height: 94%;
+    animation: rotateCircle 5s linear infinite;
+}
+
+
+.circleContainerGreen::before {
+    border-color: transparent var(--dark-green) transparent transparent;
+    clip-path: inset(1% 0 0 0);
+   
+}
+
+.circleContainerGreen::after {
+    clip-path: inset(0 25% 0 0);
+    border-color: var(--dark-green);
+    animation-direction: reverse;
+}
+
+
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circleImage {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+    transition: filter 0.3s ease-in-out;
+}
+
+.circleImage:hover {
+    filter: brightness(0.5); 
+}
+
+.circleTitle {
+    position: absolute;
+    color: white;
+    font-size: 0.8rem;
+    direction: rtl;
+    font-weight: bold;
+    text-shadow: 
+        2px 2px 4px #000, /* سایه اول */
+        2px -2px 4px #000, /* سایه دوم */
+        -2px -2px 4px #000; /* سایه چهارم */
+    z-index: 2;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}

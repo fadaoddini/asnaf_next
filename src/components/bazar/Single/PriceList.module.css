@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    background-color:var(--bg-color);
+    padding: 10px;
+    border-radius: 25px ;
+    margin-top: 10px;
+  }
+  .h_title{
+    color: var(--bg-color-hover);
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--bg-color-hover); /* برای خط پایین تیتر */
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--bg-color);
+   
+    color: var(--text-color);
+    
+    font-size: 0.7rem; /* برای تیتر */
+    border-bottom: 1px solid var(--bg-color-hover); /* برای خط پایین تیتر */
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--white);
+    line-height: 1rem;
+    border-radius: 25px;
+    margin: 5px ;
+    padding: 0px ;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    color:var(--black);
+  }
+  .row:hover{
+    background-color: var(--bg-color-hover);
+  }
+  
+  .cell {
+    padding: 5px;
+    text-align: center; /* مرکز چین کردن متن */
+  }
+  

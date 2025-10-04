@@ -1,0 +1,167 @@
+.container {
+
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 110px 10% 0 10%;
+    align-items: center;
+  }
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--light-orange);
+}
+.titr {
+  font-size: 1.1rem;
+}
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--dark-red);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+}
+
+.fullRow {
+  flex-basis: 90%;
+}
+
+.submitButton {
+  background-color: var(--ok);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: var(--ok-ok);
+}
+
+.textDanger {
+  color: var(--dark-red);
+}
+.box_attr {
+  width: 100%;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.all_row {
+  width: 100%;
+  float: right;
+  margin-bottom: 40px;
+}
+.right_row {
+  width: 69%;
+  float: right;
+}
+.left_row {
+  margin-right: 10px;
+  width: 29%;
+  float: left;
+}
+.choose_bazar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--brown);
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--brown);
+ 
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.tab:hover {
+  background-color: var(--coper);
+  color: var(--white);
+}
+
+.active {
+  background-color: var(--brown);
+  color: #fff;
+}
+.lable_form{
+  direction: rtl;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-items: right;
+  font-size: 0.8rem;
+}
+.text_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn_load,
+.btn_send {
+  background-color: var(--brown); /* رنگ قهوه‌ای */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn_load {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn_send:hover {
+  background-color: #fff;
+  color: var(--brown);
+  border: 1px solid var(--brown);
+}
+.toptop{
+
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    flex-basis: 100%;
+  }
+}
