@@ -1320,3 +1320,210 @@
     padding: 15px;
   }
 }
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/festival/FestivalAll.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/* components/festival/festivalall.module.css */
+.FestivalAll_container__q79Ae {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2rem;
+  font-family: 'Vazir', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.FestivalAll_card__BmvV0 {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.FestivalAll_card__BmvV0:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.FestivalAll_header__VlLu3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.FestivalAll_title__qapab {
+  color: #2d3748;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.FestivalAll_icon__G22_o {
+  font-size: 2.5rem;
+  animation: FestivalAll_bounce__WrU23 2s infinite;
+}
+
+@keyframes FestivalAll_bounce__WrU23 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.FestivalAll_content___F0Yi {
+  margin-bottom: 2rem;
+}
+
+.FestivalAll_message__1xXpa {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.FestivalAll_phoneNumbers__iPHwS {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.FestivalAll_phoneItem__Q0ZWx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #f7fafc, #edf2f7);
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.FestivalAll_phoneItem__Q0ZWx:hover {
+  background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+  border-color: #63b3ed;
+  transform: scale(1.02);
+}
+
+.FestivalAll_phoneItem__Q0ZWx:active {
+  transform: scale(0.98);
+}
+
+.FestivalAll_phoneIcon__4nUmk {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.FestivalAll_phoneItem__Q0ZWx:hover .FestivalAll_phoneIcon__4nUmk {
+  transform: scale(1.2);
+}
+
+.FestivalAll_phoneNumber__rF4Pk {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3748;
+  direction: ltr;
+  display: inline-block;
+}
+
+.FestivalAll_clickHint__u8n5H {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.FestivalAll_infoBox___cY8Z {
+  background: linear-gradient(135deg, #fed7d7, #feb2b2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-right: 4px solid #fc8181;
+}
+
+.FestivalAll_infoTitle__eaApF {
+  color: #742a2a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.FestivalAll_infoText__4C8gs {
+  color: #742a2a;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.FestivalAll_footer__UFO_X {
+  border-top: 2px solid #e2e8f0;
+  padding-top: 1.5rem;
+}
+
+.FestivalAll_footerText__gaUB0 {
+  color: #718096;
+  font-size: 0.95rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .FestivalAll_container__q79Ae {
+    padding: 1rem;
+  }
+  
+  .FestivalAll_card__BmvV0 {
+    padding: 2rem 1.5rem;
+  }
+  
+  .FestivalAll_header__VlLu3 {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .FestivalAll_title__qapab {
+    font-size: 1.5rem;
+  }
+  
+  .FestivalAll_phoneItem__Q0ZWx {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .FestivalAll_phoneNumber__rF4Pk {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .FestivalAll_card__BmvV0 {
+    padding: 1.5rem 1rem;
+  }
+  
+  .FestivalAll_title__qapab {
+    font-size: 1.3rem;
+  }
+  
+  .FestivalAll_message__1xXpa {
+    font-size: 1rem;
+  }
+  
+  .FestivalAll_phoneNumber__rF4Pk {
+    font-size: 1.1rem;
+  }
+}

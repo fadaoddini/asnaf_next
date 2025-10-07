@@ -1,0 +1,204 @@
+/* components/festival/festivalall.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2rem;
+  font-family: 'Vazir', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  color: #2d3748;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.icon {
+  font-size: 2.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+.message {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.phoneNumbers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.phoneItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #f7fafc, #edf2f7);
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.phoneItem:hover {
+  background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+  border-color: #63b3ed;
+  transform: scale(1.02);
+}
+
+.phoneItem:active {
+  transform: scale(0.98);
+}
+
+.phoneIcon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.phoneItem:hover .phoneIcon {
+  transform: scale(1.2);
+}
+
+.phoneNumber {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3748;
+  direction: ltr;
+  display: inline-block;
+}
+
+.clickHint {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.infoBox {
+  background: linear-gradient(135deg, #fed7d7, #feb2b2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-right: 4px solid #fc8181;
+}
+
+.infoTitle {
+  color: #742a2a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.infoText {
+  color: #742a2a;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.footer {
+  border-top: 2px solid #e2e8f0;
+  padding-top: 1.5rem;
+}
+
+.footerText {
+  color: #718096;
+  font-size: 0.95rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .phoneItem {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .phoneNumber {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+  }
+  
+  .message {
+    font-size: 1rem;
+  }
+  
+  .phoneNumber {
+    font-size: 1.1rem;
+  }
+}

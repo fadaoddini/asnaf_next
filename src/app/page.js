@@ -9,6 +9,7 @@ import RegisterUserFestival from "@/components/festival/RegisterUserFestival";
 import ReservationInfo from "@/components/festival/ReservationInfo"; // کامپوننت جدید
 import { useAuth } from "@/context/AuthContext";
 import Link from "next/link";
+import FestivalAll from "@/components/festival/FestivalAll";
 
 export default function Home() {
   const { user, isAdmin, isStaff, hasAdminAccess, isLoggedIn } = useAuth();
@@ -210,18 +211,20 @@ export default function Home() {
                 ) : (
                   // کاربر لاگین کرده - نمایش نقشه
                   <>
-                    <div className={styles.userInstructions}>
+                    {/* <div className={styles.userInstructions}>
                     
                       <p>برای رزرو غرفه، روی غرفه‌های سبز رنگ (آزاد) کلیک کنید.</p>
-                    </div>
-                    {selectedFestival && (
+                    </div> */}
+                    {/* {selectedFestival && (
                       <FestivalMatrixView 
                         matrix={festivalMatrix}
                         width={selectedFestival.number_width}
                         height={selectedFestival.number_height}
                         onRoomSelect={handleRoomSelect}
                       />
-                    )}
+                    )} */}
+
+                    <FestivalAll />
                   </>
                 )}
               </div>
