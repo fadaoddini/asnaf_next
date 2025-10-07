@@ -58,55 +58,56 @@ const FestivalMatrix = ({ matrix, width, height, festivalId, onRoomAdded, onRoom
     return `غرفه: ${cell.name}\nموقعیت: (${colIndex}, ${rowIndex})\nوضعیت: ${cell.status_display}\nقیمت: ${cell.price} تومان`;
   };
 
-  const handleCellClick = async (cell, rowIndex, colIndex) => {
-    // اگر سلول خالی نیست، اجازه ویرایش بده
-    if (cell && !cell.empty) {
-      setFormData({
-        name: cell.name || '',
-        nabsh: cell.nabsh !== undefined ? cell.nabsh : true,
-        metraj: cell.metraj || '',
-        description: cell.description || '',
-        price: cell.price || '',
-        is_label: cell.is_label || false,
-        status: cell.status || 0
-      });
+const handleCellClick = async (cell, rowIndex, colIndex) => {
+  // اگر سلول خالی نیست، اجازه ویرایش بده
+  if (cell && !cell.empty) {
+    setFormData({
+      name: cell.name || '',
+      nabsh: cell.nabsh !== undefined ? cell.nabsh : true,
+      metraj: cell.metraj || '',
+      description: cell.description || '',
+      price: cell.price || '',
+      is_label: cell.is_label || false,
+      status: cell.status || 0
+    });
 
-      // اگر غرفه رزرو شده است، اطلاعات رزرو را دریافت کن
-      if (cell.status === 1) {
-        await fetchReservationInfo(cell.id);
-      } else {
-        setReservationInfo(null);
-      }
+    // اگر غرفه رزرو شده یا قطعی شده است، اطلاعات رزرو را دریافت کن
+    if (cell.status === 1 || cell.status === 2) {
+      await fetchReservationInfo(cell.id);
     } else {
-      // اگر سلول خالی است، فرم خالی نشان بده
-      setFormData({
-        name: `غرفه ${colIndex}-${rowIndex}`,
-        nabsh: true,
-        metraj: '',
-        description: '',
-        price: '',
-        is_label: false,
-        status: 0
-      });
       setReservationInfo(null);
     }
+  } else {
+    // اگر سلول خالی است، فرم خالی نشان بده
+    setFormData({
+      name: `غرفه ${colIndex}-${rowIndex}`,
+      nabsh: true,
+      metraj: '',
+      description: '',
+      price: '',
+      is_label: false,
+      status: 0
+    });
+    setReservationInfo(null);
+  }
 
-    setSelectedCell({ cell, rowIndex, colIndex });
-    setShowDialog(true);
-  };
+  setSelectedCell({ cell, rowIndex, colIndex });
+  setShowDialog(true);
+};
 
   // وقتی وضعیت تغییر کرد، اطلاعات رزرو را بروزرسانی کن
-  useEffect(() => {
-    if (showDialog && selectedCell && selectedCell.cell && !selectedCell.cell.empty) {
-      if (formData.status === 1 && selectedCell.cell.status !== 1) {
-        // اگر وضعیت به رزرو شده تغییر کرد
-        fetchReservationInfo(selectedCell.cell.id);
-      } else if (formData.status !== 1) {
-        // اگر وضعیت از رزرو شده تغییر کرد
-        setReservationInfo(null);
-      }
+ useEffect(() => {
+  if (showDialog && selectedCell && selectedCell.cell && !selectedCell.cell.empty) {
+    if ((formData.status === 1 || formData.status === 2) && 
+        (selectedCell.cell.status !== 1 && selectedCell.cell.status !== 2)) {
+      // اگر وضعیت به رزرو شده یا قطعی شده تغییر کرد
+      fetchReservationInfo(selectedCell.cell.id);
+    } else if (formData.status !== 1 && formData.status !== 2) {
+      // اگر وضعیت از رزرو شده یا قطعی شده تغییر کرد
+      setReservationInfo(null);
     }
-  }, [formData.status, showDialog, selectedCell]);
+  }
+}, [formData.status, showDialog, selectedCell]);
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -219,9 +220,15 @@ const FestivalMatrix = ({ matrix, width, height, festivalId, onRoomAdded, onRoom
               onClick={() => handleCellClick(cell, rowIndex, colIndex)}
             >
               {cell && !cell.empty && (
-                <span className={styles.cellIndicator}>
-                  {cell.status === 1 ? 'R' : cell.status === 2 ? 'C' : ''}
-                </span>
+               <>
+      <span className={styles.cellIndicator}>
+        {cell.status === 1 ? 'R' : cell.status === 2 ? 'C' : ''}
+      </span>
+      <span className={styles.cellName}>
+        {cell.name}
+      </span>
+    </>
+                
               )}
             </div>
           ))
@@ -356,9 +363,11 @@ const FestivalMatrix = ({ matrix, width, height, festivalId, onRoomAdded, onRoom
               </div>
 
               {/* بخش اطلاعات رزرو */}
-              {(formData.status === 1 || reservationInfo) && (
+              {(formData.status === 1 || formData.status === 2 || reservationInfo) && (
                 <div className={styles.reservationSection}>
-                  <h4>📋 اطلاعات رزرو</h4>
+                      <h4>
+      {formData.status === 2 ? '📋 اطلاعات قطعی شده' : '📋 اطلاعات رزرو'}
+    </h4>
                   
                   {reservationLoading ? (
                     <div className={styles.loading}>در حال دریافت اطلاعات رزرو...</div>
@@ -423,17 +432,19 @@ const FestivalMatrix = ({ matrix, width, height, festivalId, onRoomAdded, onRoom
                         <strong>تاریخ رزرو:</strong>
                         <span>{new Date(reservationInfo.created_at).toLocaleString('fa-IR')}</span>
                       </div>
-                      <div className={styles.reservationRow}>
-                        <strong>وضعیت رزرو:</strong>
-                        <span className={`${styles.statusBadge} ${styles[`status-${reservationInfo.status}`]}`}>
-                          {reservationInfo.status_display}
-                        </span>
-                      </div>
+                   <div className={styles.reservationRow}>
+  <strong>وضعیت {formData.status === 2 ? 'قطعی' : 'رزرو'}:</strong>
+  <span className={`${styles.statusBadge} ${styles[`status-${formData.status}`]}`}>
+    {formData.status === 2 ? 'قطعی شده' : 
+     formData.status === 1 ? 'رزرو شده' : 
+     reservationInfo.status_display}
+  </span>
+</div>
                     </div>
                   ) : (
-                    <div className={styles.noReservation}>
-                      هیچ اطلاعات رزروی برای این غرفه یافت نشد.
-                    </div>
+                   <div className={styles.noReservation}>
+        هیچ اطلاعات {formData.status === 2 ? 'قطعی' : 'رزرو'} برای این غرفه یافت نشد.
+      </div>
                   )}
                 </div>
               )}

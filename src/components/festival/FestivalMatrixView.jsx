@@ -70,9 +70,14 @@ const FestivalMatrixView = ({ matrix, width, height, onRoomSelect }) => {
               }}
             >
               {cell && !cell.empty && (
-                <span className={styles.cellIndicator}>
-                  {cell.status === 1 ? 'R' : cell.status === 2 ? 'C' : ''}
-                </span>
+                     <>
+      <span className={styles.cellIndicator}>
+        {cell.status === 1 ? 'R' : cell.status === 2 ? 'C' : ''}
+      </span>
+      <span className={styles.cellName}>
+        {cell.name}
+      </span>
+    </>
               )}
             </div>
           ))
